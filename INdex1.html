@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural History Museum – Timeless Wonders</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    @keyframes slideUp {
+      from { transform: translateY(120px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .chapter-img {
+      transition: filter 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1), opacity 0.9s cubic-bezier(0.16,1,0.3,1);
+    }
+    .ptero {
+      transition: transform 1.4s ease-out, opacity 1.4s ease-out;
+    }
+    .ptero.in-view {
+      transform: translateY(-78%) !important;
+      opacity: 1 !important;
+    }
+  </style>
+</head>
+<body class="bg-[#fcfcfc] text-[#111] overflow-x-hidden">
+
+<!-- ========== SECTION 1 – HERO ========== -->
+<div class="relative w-full min-h-screen flex flex-col overflow-hidden bg-[#fcfcfc]">
+  <!-- Background Video -->
+  <div class="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
+    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+      <source src="https://res.cloudinary.com/dsdxaxkiz/video/upload/v1779624998/magnific_use-img-2-as-the-exact-ba_Piu3X0W42C_wnrc8f.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-black/20"></div>
+  </div>
+
+  <div class="relative z-10 flex flex-col min-h-screen">
+    <header class="pt-6 px-6 md:px-16">
+      <svg viewBox="0 0 840 100" fill="none" class="w-full">
+        <g fill="#111" style="animation: slideUp 1.2s cubic-bezier(0.16,1,0.3,1) both;">
+          <polygon points="0,0 14,0 14,100 0,100" />
+          <polygon points="200,0 214,0 214,100 200,100" />
+          <polygon points="0,0 33,0 214,100 181,100" />
+        </g>
+        <g fill="#111" transform="translate(280,0)" style="animation: slideUp 1.2s cubic-bezier(0.16,1,0.3,1) 0.1s both;">
+          <polygon points="0,0 14,0 14,100 0,100" />
+          <polygon points="200,0 214,0 214,100 200,100" />
+          <polygon points="14,43 200,43 200,57 14,57" />
+        </g>
+        <g fill="#111" transform="translate(560,0)" style="animation: slideUp 1.2s cubic-bezier(0.16,1,0.3,1) 0.2s both;">
+          <polygon points="0,0 14,0 14,100 0,100" />
+          <polygon points="266,0 280,0 280,100 266,100" />
+          <polygon points="0,0 26,0 153,100 127,100" />
+          <polygon points="254,0 280,0 153,100 127,100" />
+        </g>
+      </svg>
+
+      <div class="flex justify-between items-start mt-8 text-[10px] md:text-[11px] font-mono tracking-[0.2em] uppercase" style="animation: fadeUp 0.8s ease-out 0.2s both;">
+        <div class="w-[15%] hidden md:block">
+          <div>Natura</div>
+          <div>History</div>
+          <div>Museum</div>
+        </div>
+        <div class="w-[5%] hidden md:flex justify-center">
+          <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="flex-1 md:w-[30%] text-gray-800 leading-relaxed font-mono text-center md:text-left">
+          Exploring the story of life on earth through science, discovery and wonder.
+        </div>
+        <div class="w-[5%] hidden md:flex justify-center">
+          <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="w-[15%] hidden md:flex justify-end gap-6 text-gray-800">
+          <a href="#" class="hover:text-black hover:underline">Visit</a>
+          <a href="#" class="hover:text-black hover:underline">Exhibitions</a>
+          <a href="#" class="hover:text-black hover:underline">Discover</a>
+          <a href="#" class="hover:text-black hover:underline">Learn</a>
+          <a href="#" class="hover:text-black hover:underline">About</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Left sidebar -->
+    <div class="px-10 md:px-16 mt-20 sm:mt-28 md:mt-32 w-[320px]">
+      <div class="flex items-center gap-4 text-xs font-mono mb-6" style="animation: fadeUp 0.8s ease-out 0.4s both;">
+        <span>01</span>
+        <div class="w-16 h-[1.5px] bg-black/20"></div>
+      </div>
+      <h2 class="text-[3.5rem] md:text-[5rem] font-normal tracking-tight leading-[1]" style="animation: fadeUp 0.8s ease-out 0.5s both;">
+        TIMELESS<br>WONDERS
+      </h2>
+      <p class="text-[13px] md:text-[14px] text-gray-700 w-[240px] leading-[1.6] mt-6" style="animation: fadeUp 0.8s ease-out 0.6s both;">
+        Step into the natural world and discover the stories written millions of years ago.
+      </p>
+      <div class="mt-8 group relative overflow-hidden" style="animation: fadeUp 0.8s ease-out 0.7s both;">
+        <a href="#" class="relative z-10 flex items-center justify-center gap-2 bg-[#1a1a1a] px-6 py-3.5 rounded-md shadow-sm hover:shadow-[3px_3px_0px_rgba(17,17,17,0.5)] hover:-translate-y-0.5 transition-all duration-200">
+          <div class="absolute inset-0 bg-[#fcfcfc] -translate-x-[101%] group-hover:translate-x-0 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"></div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="relative z-10 text-white group-hover:text-[#111] transition-colors duration-300 group-hover:scale-110 group-hover:-rotate-12 group-hover:-translate-y-1">
+            <path d="M12 2L12 22M12 22L8 18M12 22L16 18" stroke="currentColor" stroke-width="2"/>
+            <path d="M4 12L20 12" stroke="currentColor" stroke-width="2"/>
+            <path d="M4 12L8 8M4 12L8 16" stroke="currentColor" stroke-width="2"/>
+            <path d="M20 12L16 8M20 12L16 16" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <span class="relative z-10 text-[15px] font-medium text-white group-hover:text-[#111] transition-colors duration-300">Explore Now</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right sidebar -->
+    <div class="absolute right-16 top-40 w-[200px] hidden md:flex flex-col gap-4" style="animation: fadeUp 0.8s ease-out 0.9s both;">
+      <div>
+        <div class="text-[10px] font-bold font-mono tracking-widest uppercase">Tyrannosaurus Rex</div>
+        <div class="text-[12px] text-gray-600 leading-[1.6] mt-1">Late Cretaceous period<br>68-66 million years ago</div>
+      </div>
+      <div class="flex justify-between">
+        <div><div class="text-[10px] font-mono tracking-widest uppercase text-gray-500">Length</div><div class="text-[13px] font-medium">12.3 m</div></div>
+        <div><div class="text-[10px] font-mono tracking-widest uppercase text-gray-500">Height</div><div class="text-[13px] font-medium">4.0 m</div></div>
+      </div>
+      <button class="flex items-center gap-2 group">
+        <div class="w-10 h-10 rounded-full border border-gray-400 flex items-center justify-center group-hover:border-black group-hover:bg-[#111] transition-all">
+          <svg class="w-4 h-4 group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14"/></svg>
+        </div>
+        <span class="text-[10px] font-mono uppercase tracking-widest font-bold">View Details</span>
+      </button>
+    </div>
+
+    <div class="absolute bottom-10 left-[2.5rem] md:left-[4rem] hidden md:flex items-center gap-3" style="animation: fadeUp 0.8s ease-out 1.2s both;">
+      <div class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center gap-[4px]">
+        <div class="w-[1px] h-3 bg-gray-600"></div>
+        <div class="w-[1px] h-3 bg-gray-600"></div>
+      </div>
+      <span class="text-[10px] font-mono tracking-widest uppercase text-gray-500 font-semibold">Scroll to explore</span>
+    </div>
+  </div>
+</div>
+
+<!-- ========== SECTION 2 – EXPLORE OUR WORLD (with image) ========== -->
+<section class="relative w-full min-h-screen bg-[#fcfcfc] flex flex-col items-center pt-24 md:pt-32 pb-16">
+  <div class="text-center px-6 max-w-6xl mx-auto">
+    <div class="text-[10px] md:text-[11px] font-mono tracking-[0.2em] mb-12">
+      <span class="text-gray-500">[ 02 ]</span>
+      <span class="text-gray-900 font-bold uppercase ml-2">Explore Our World</span>
+    </div>
+    <h2 class="text-[2.2rem] md:text-[3.5rem] lg:text-[4.2rem] leading-[1.1] font-medium tracking-tight text-[#111] max-w-4xl mx-auto">
+      Unearth the stories of our planet's past<br class="hidden md:block"> through fossils, minerals, and ancient wonders.
+    </h2>
+    
+    <!-- Fossil Image Display in White Section -->
+    <div class="mt-12 mb-8 max-w-2xl mx-auto">
+      <div class="relative aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
+        <img id="whiteSectionImage" src="https://res.cloudinary.com/dsdxaxkiz/image/upload/v1779624236/03_hcp3jc.png" alt="Current fossil" class="w-full h-full object-cover chapter-img">
+        <div class="absolute bottom-3 left-3 bg-black/60 text-white text-[10px] font-mono px-2 py-1 rounded-full">
+          <span id="whiteSectionCounter">03</span> / 05
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-3 md:gap-4 mt-12 mb-10">
+      <button class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 text-[11px] font-medium uppercase tracking-wider bg-white/50 backdrop-blur-sm hover:border-black hover:bg-black hover:text-white transition-all"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/><path d="M9 3v18M15 3v18"/></svg> Dinosaurs</button>
+      <button class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 text-[11px] font-medium uppercase tracking-wider bg-white/50 backdrop-blur-sm hover:border-black hover:bg-black hover:text-white transition-all"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="4"/><path d="M5 21v-4a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v4"/></svg> Ancient Life</button>
+      <button class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 text-[11px] font-medium uppercase tracking-wider bg-white/50 backdrop-blur-sm hover:border-black hover:bg-black hover:text-white transition-all"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7h8M8 12h8M8 17h4"/></svg> Minerals</button>
+      <button class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 text-[11px] font-medium uppercase tracking-wider bg-white/50 backdrop-blur-sm hover:border-black hover:bg-black hover:text-white transition-all"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> Fossils</button>
+      <button class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 text-[11px] font-medium uppercase tracking-wider bg-white/50 backdrop-blur-sm hover:border-black hover:bg-black hover:text-white transition-all"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14M22 3h-6a4 4 0 0 0-4 4v14"/></svg> Learn More</button>
+    </div>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0 px-8 md:px-16 pb-8 pointer-events-none hidden md:flex justify-between text-[10px] font-mono tracking-widest uppercase text-gray-500 font-medium">
+    <div>WE DON'T JUST TELL STORIES.</div>
+    <div>PALEONTOLOGY (C) 2026</div>
+  </div>
+</section>
+
+<!-- ========== SECTION 3 – ANCIENT COLLECTION (DARK) ========== -->
+<section class="relative w-full bg-[#0a0a0a] text-white overflow-hidden">
+  <div id="ptero" class="absolute top-0 left-1/2 -translate-x-1/2 w-[160vw] md:w-[1100px] pointer-events-none z-0 opacity-0 transform -translate-y-[65%] ptero">
+    <img src="https://res.cloudinary.com/dsdxaxkiz/image/upload/v1779625001/ChatGPT_Image_May_23_2026_12_24_44_PM_1_lv1dne.png" alt="Pterodactyl" class="w-full">
+  </div>
+
+  <div class="relative z-10 px-6 md:px-16 pt-32 md:pt-48 mb-16">
+    <div class="flex flex-col xl:flex-row justify-between gap-8">
+      <div>
+        <h3 class="text-[1.8rem] md:text-[3rem] lg:text-[3.8rem] xl:text-[4rem] leading-[1.15] font-medium tracking-tight">
+          Curated from millions of years of wonder
+          <span class="inline-flex gap-2 md:gap-3 align-middle mx-2 md:mx-4 translate-y-[-4px]">
+            <span class="w-10 h-10 md:w-14 md:h-14 rounded-full border border-gray-600 bg-black text-gray-400 flex items-center justify-center hover:bg-white hover:text-black transition-all"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/><path d="M9 3v18M15 3v18"/></svg></span>
+            <span class="w-10 h-10 md:w-14 md:h-14 rounded-full border border-gray-600 bg-black text-gray-400 flex items-center justify-center hover:bg-white hover:text-black transition-all"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="4"/><path d="M5 21v-4a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v4"/></svg></span>
+            <span class="w-10 h-10 md:w-14 md:h-14 rounded-full border border-gray-600 bg-black text-gray-400 flex items-center justify-center hover:bg-white hover:text-black transition-all"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+          </span>
+          & discovery.
+        </h3>
+      </div>
+      <div class="text-right">
+        <div class="text-[9px] md:text-[10px] font-mono tracking-widest text-gray-400 uppercase mb-4 leading-relaxed">
+          WE DON'T JUST DISPLAY FOSSILS<br>WE SHARE EARTH'S STORY
+        </div>
+        <div class="flex gap-3 justify-end">
+          <span class="px-4 py-1.5 rounded-full border border-gray-600 text-[9px] font-mono tracking-widest uppercase text-gray-300 hover:bg-white hover:text-black transition-all cursor-pointer">Educational</span>
+          <span class="px-4 py-1.5 rounded-full border border-gray-600 text-[9px] font-mono tracking-widest uppercase text-gray-300 hover:bg-white hover:text-black transition-all cursor-pointer">Authentic</span>
+          <span class="px-4 py-1.5 rounded-full border border-gray-600 text-[9px] font-mono tracking-widest uppercase text-gray-300 hover:bg-white hover:text-black transition-all cursor-pointer">Inspiring</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full">
+    <div class="h-px bg-gray-800"></div>
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-[35%] border-r border-gray-800 border-b md:border-b-0 min-h-[400px] md:min-h-[500px] relative">
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+          <div class="text-gray-500 text-xl tracking-[0.3em] mb-6">***</div>
+          <div class="relative w-[80%] h-[80%] m-auto">
+            <img id="darkSectionImage" src="https://res.cloudinary.com/dsdxaxkiz/image/upload/v1779624236/03_hcp3jc.png" alt="Chapter" class="w-full h-full object-contain mix-blend-lighten chapter-img">
+          </div>
+          <div class="absolute bottom-6 left-6 text-[10px] font-mono tracking-widest text-[#888] uppercase">
+            <span class="text-[#888]">CHAPTER</span>
+            <span id="darkChapterNum" class="inline-block">03</span>
+            <span class="text-[#333]"> / 05</span>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-[65%]">
+        <div class="border-b border-gray-800 p-6 flex justify-between items-center text-[10px] font-mono text-gray-400 tracking-widest">
+          <span>Explore the past. Understand the present.</span>
+          <span id="darkChapterLabel">CHAPTER 03</span>
+        </div>
+        <div id="chapterList" class="divide-y divide-gray-800/80"></div>
+      </div>
+    </div>
+    <div class="h-px bg-gray-800"></div>
+    <div class="px-6 py-6 text-[10px] font-mono tracking-widest text-gray-500 uppercase bg-[#0a0a0a]">
+      DIGGING INTO OUR PLANET'S PAST
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    const chapters = [
+      { name: "Age of Dinosaurs", image: "https://res.cloudinary.com/dsdxaxkiz/image/upload/v1779624247/01_udnber.png" },
+      { name: "Fossils of Ancient Life", image: "https://res.cloudinary.com/dsdxaxkiz/image/upload/v1779624374/02_pmvxxl.png" },
+      { name: "Reptiles of the Mesozoic", image: "https://res.cloudinary.com/dsdxaxkiz/image/upload/v1779624236/03_hcp3jc.png" },
+      { name: "Marine Fossil Gallery", image: "https://res.cloudinary.com/dsdxaxkiz/image/upload/v1779624256/04_get63z.png" },
+      { name: "Prehistoric Giants", image: "https://res.cloudinary.com/dsdxaxkiz/image/upload/v1779624251/05_kz1tyu.png" }
+    ];
+    let activeIndex = 2;
+    
+    // Get all image elements and counters
+    const whiteImg = document.getElementById('whiteSectionImage');
+    const darkImg = document.getElementById('darkSectionImage');
+    const whiteCounter = document.getElementById('whiteSectionCounter');
+    const darkCounter = document.getElementById('darkChapterNum');
+    const darkLabel = document.getElementById('darkChapterLabel');
+    const listEl = document.getElementById('chapterList');
+
+    function updateImage(imgElement, src) {
+      if (!imgElement) return;
+      imgElement.style.filter = 'blur(8px)';
+      imgElement.style.transform = 'scale(1.05) translateY(10px)';
+      imgElement.style.opacity = '0.5';
+      setTimeout(() => {
+        imgElement.src = src;
+        setTimeout(() => {
+          imgElement.style.filter = 'blur(0px)';
+          imgElement.style.transform = 'scale(1) translateY(0)';
+          imgElement.style.opacity = '1';
+        }, 50);
+      }, 300);
+    }
+
+    function setChapter(index) {
+      activeIndex = index;
+      const chapter = chapters[activeIndex];
+      const num = String(activeIndex + 1).padStart(2, '0');
+      
+      // Update both images
+      updateImage(whiteImg, chapter.image);
+      updateImage(darkImg, chapter.image);
+      
+      // Update counters
+      if (whiteCounter) whiteCounter.innerText = num;
+      if (darkCounter) darkCounter.innerText = num;
+      if (darkLabel) darkLabel.innerText = `CHAPTER ${num}`;
+      
+      renderList();
+    }
+
+    function renderList() {
+      listEl.innerHTML = '';
+      chapters.forEach((ch, idx) => {
+        const div = document.createElement('div');
+        div.className = `group px-6 py-6 flex justify-between items-center cursor-pointer transition-all duration-300 ${idx === activeIndex ? 'text-white' : 'text-[#444] hover:text-[#999]'}`;
+        div.innerHTML = `<span class="text-xl md:text-2xl font-medium tracking-tight">${ch.name}</span>${idx === activeIndex ? '<svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 7l8 8M7 15l8-8"/></svg>' : ''}`;
+        div.addEventListener('click', () => setChapter(idx));
+        listEl.appendChild(div);
+      });
+    }
+
+    renderList();
+    setChapter(activeIndex);
+
+    // Auto-rotate every 3.5 seconds
+    setInterval(() => {
+      setChapter((activeIndex + 1) % chapters.length);
+    }, 3500);
+
+    // Pterodactyl animation
+    const ptero = document.getElementById('ptero');
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        ptero.classList.add('in-view');
+        observer.disconnect();
+      }
+    }, { threshold: 0.1 });
+    observer.observe(document.querySelector('.bg-\\[\\#0a0a0a\\]'));
+  })();
+</script>
+</body>
+</html>
